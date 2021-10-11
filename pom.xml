@@ -42,6 +42,34 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<plugin>
+				<groupId>com.orctom.mojo</groupId>
+				<artifactId>was-maven-plugin</artifactId>
+				<version>1.0.8</version>
+				<executions>
+					<execution>
+						<id>deploy</id>
+						<phase>install</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+						<configuration>
+							<contextRoot>test-application</contextRoot>
+							<user>mahmoud</user>
+							<password>123456</password>
+							<wasHome>/opt/IBM/WebSphere/AppServer</wasHome>
+							<applicationName>${project.build.finalName}</applicationName>
+							<host>192.168.1.105</host>
+							<server>server1</server>
+							<node>mahmoudNode01</node>
+							<virtualHost>default_host</virtualHost>
+							<verbose>true</verbose>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 	</build>
 
