@@ -10,6 +10,6 @@ public class TestController {
     @RequestMapping("/test")
     public String test()
     {
-        return "hello world9 welcome";
+        return "hello world 10";
     }
 }
