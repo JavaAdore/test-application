@@ -60,7 +60,7 @@
 							<password>123456</password>
 							<wasHome>/opt/IBM/WebSphere/AppServer</wasHome>
 							<applicationName>${project.build.finalName}</applicationName>
-							<host>192.168.1.105</host>
+							<host>192.168.0.22</host>
 							<server>server1</server>
 							<node>mahmoudNode01</node>
 							<virtualHost>default_host</virtualHost>
