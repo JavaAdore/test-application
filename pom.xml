@@ -42,7 +42,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-
+			<!--
 			<plugin>
 				<groupId>com.orctom.mojo</groupId>
 				<artifactId>was-maven-plugin</artifactId>
@@ -69,7 +69,7 @@
 					</execution>
 				</executions>
 			</plugin>
-
+			-->
 		</plugins>
 	</build>
 
